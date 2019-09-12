@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/google_account_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="0.5dp"
+        app:civ_border_color="#000000"/>
+
+    <TextView
+        android:layout_below="@id/google_account_profile_image"
+        android:id="@+id/google_account_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Rohit Yadav"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_below="@id/google_account_full_name"
+        android:id="@+id/google_account_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="rohit@gmail.com"
+        android:textSize="16sp"/>
+
+    <Button
+        android:layout_below="@id/google_account_username"
+        android:id="@+id/sign_out_from_google_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="SIGN OUT"/>
+
+    <Button
+        android:layout_below="@id/sign_out_from_google_account"
+        android:id="@+id/revoke_access_from_google_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="REVOKE ACCESS"/>
+</RelativeLayout>
